@@ -1,0 +1,13 @@
+.Navigation {
+  background-color: rgb(249, 112, 63);
+  height: 7vh;
+  width: 438px;
+  position: fixed;
+  bottom: 50px;
+  border-radius: 10px;
+}
+
+.Navigation a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,12 +1,13 @@
+import styles from "./Menu.module.css";
 import { NavLink } from "react-router-dom";
 
 function Menu() {
   return (
-    <nav>
-      <NavLink>Home</NavLink>
-      <NavLink>Audio</NavLink>
-      <NavLink>Events</NavLink>
-      <NavLink>Eat</NavLink>
+    <nav className={styles.Navigation}>
+      <NavLink to=".">Home</NavLink>
+      <NavLink to="audio">Audio</NavLink>
+      <NavLink to="events">Events</NavLink>
+      <NavLink to="eat">Eat</NavLink>
     </nav>
   );
 }
