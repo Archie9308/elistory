@@ -1,11 +1,17 @@
 import styles from "./AudioGuide.module.css";
 import arrow from "./arrow-back.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function AudioGuide() {
+  const nav = useNavigate();
   return (
     <div className={styles.AudioGuide}>
-      <img className={styles.Logo} src={arrow} alt="back" />
+      <img
+        className={styles.Logo}
+        src={arrow}
+        alt="back"
+        onClick={() => nav(-1)}
+      />
       <h1 className={styles.Title}>Выберите локацию</h1>
       <div>
         <NavLink to="popular" className={styles.Buttons}>
