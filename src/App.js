@@ -14,9 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />}></Route>
-            <Route path="audio" element={<AudioGuide />}>
-              <Route path="popular" element={<PopularObj />}></Route>
-            </Route>
+            <Route path="audio" element={<AudioGuide />}></Route>
+            <Route path="audio/popular" element={<PopularObj />}></Route>
             <Route path="events" element={<Events />}></Route>
             <Route path="eat" element={<Eat />}></Route>
           </Route>
